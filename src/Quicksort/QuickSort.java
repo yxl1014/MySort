@@ -5,7 +5,7 @@ import java.util.Arrays;
 /*
 * 快速排序
 * */
-public class Sort {
+public class QuickSort {
     private int[] value;
     private int len;
     public int[] getValue() {
@@ -16,15 +16,15 @@ public class Sort {
         this.len=value.length;
     }
 
-    public Sort(){}
+    public QuickSort(){}
 
-    public Sort(int[] value){
+    public QuickSort(int[] value){
         this.value=value;
         this.len=value.length;
     }
 
 
-    public Sort(String value){
+    public QuickSort(String value){
         this.len=value.length();
         int[] values=new int[this.len];
         char[] c=value.toCharArray();

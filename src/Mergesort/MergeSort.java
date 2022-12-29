@@ -5,7 +5,7 @@ import java.util.Arrays;
 /*
 * 并归排序
 * */
-public class Sort {
+public class MergeSort {
     private int[] value;
     private int len;
     public int[] getValue() {
@@ -15,12 +15,12 @@ public class Sort {
         this.value = value;
         this.len=value.length;
     }
-    public Sort(){}
-    public Sort(int[] value){
+    public MergeSort(){}
+    public MergeSort(int[] value){
         this.value=value;
         this.len=value.length;
     }
-    public Sort(String value){
+    public MergeSort(String value){
         this.len=value.length();
         int[] values=new int[this.len];
         char[] c=value.toCharArray();

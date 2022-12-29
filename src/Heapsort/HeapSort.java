@@ -5,7 +5,7 @@ import java.util.Arrays;
 /*
 * 堆排序
 * */
-public class Sort {
+public class HeapSort {
     private int[] arr;
     private int len;
     public void setArr(int [] arr){
@@ -13,13 +13,13 @@ public class Sort {
         this.len=arr.length;
     }
 
-    public Sort (int [] arr){
+    public HeapSort(int [] arr){
         this.arr=arr;
         this.len=arr.length;
     }
-    public Sort(){}
+    public HeapSort(){}
 
-    public Sort(String value){
+    public HeapSort(String value){
         this.len=value.length();
         int[] values=new int[this.len];
         char[] c=value.toCharArray();

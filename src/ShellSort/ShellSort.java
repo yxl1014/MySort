@@ -1,8 +1,11 @@
 package ShellSort;
+
+import java.util.Arrays;
+
 /*
 * 希尔排序
 * */
-public class Sort {
+public class ShellSort {
     private int[] value;
     private int len;
     public int[] getValue() {
@@ -13,15 +16,15 @@ public class Sort {
         this.len=value.length;
     }
 
-    public Sort(){}
+    public ShellSort(){}
 
-    public Sort(int[] value){
+    public ShellSort(int[] value){
         this.value=value;
         this.len=value.length;
     }
 
 
-    public Sort(String value){
+    public ShellSort(String value){
         this.len=value.length();
         int[] values=new int[this.len];
         char[] c=value.toCharArray();
@@ -53,10 +56,7 @@ public class Sort {
                 }
             }
         }
-        for(int i=0;i<len;i++){
-            s+=value[i];
-        }
-        return s;
+        return Arrays.toString(value);
     }
 
     public int[] doSort_I() {
